@@ -13,6 +13,10 @@ You are encouraged to treat this as a real-life project.  This typically means:
 
 Please use JavaScript of TypeScript to complete this challenge.
 
+## How To Run
+- cmd line: node myChallenge.js
+- run test: node runTest.js
+
 ## The Challenge
 
 You are tasked with developing an application that performs the following tasks in sequence:
