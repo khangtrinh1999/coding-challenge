@@ -1,6 +1,6 @@
-const GetDataFromJSON = require('./Utils/GetDataFromJSON');
-const { GetRevenue, GetExpense, GetProfitGrossMargin, GetNetProfitMargin, getWorkingCapitalRatio } = require('./Utils/Calculations');
-const { currencyFormatter, percentageFormatter } = require('./Utils/Formatter')
+const GetDataFromJSON = require('./utils/getDataFromJSON');
+const { GetRevenue, GetExpense, GetProfitGrossMargin, GetNetProfitMargin, getWorkingCapitalRatio } = require('./utils/calculations');
+const { currencyFormatter, percentageFormatter } = require('./utils/formatter')
 try {
     const data = GetDataFromJSON('./data.json');
 

@@ -1,0 +1,15 @@
+{
+    "object_category": "general-ledger",
+    "connection_id": "69260737-4c37-4f28-a9dc-270473a6d84a",
+    "user": "b0c9fe7c-915e-45e4-8e9e-49d4f27281a5",
+    "object_creation_date": "2020-10-30T01:58:16.723Z",
+    "data": [
+        
+    ],
+    "currency": "AUD",
+    "object_origin_type": "accounting",
+    "object_origin_category": "bookkeeping",
+    "object_type": "day",
+    "object_class": "timeline-balance",
+    "balance_date": "2020-09-30T00:00:00.000Z"
+}

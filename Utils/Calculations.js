@@ -1,7 +1,12 @@
 const exp = require("constants")
 
+
+
+
+
 const GetRevenue = (data) => {
-    return data.reduce((sum, item) => sum + item.total_value, 0)
+    return data.filter((item) => item.account_category === 'revenue')
+    .reduce((sum, item) => sum + item.total_value, 0)
 }
 
 const GetExpense = (data) => {
@@ -17,6 +22,7 @@ const GetSalesDebitSum = (data) => {
 const GetProfitGrossMargin = (data) => {
     const salesDebitSum = GetSalesDebitSum(data)
     const revenue = GetRevenue(data)
+    if (revenue ==0 ) return 0
     return (salesDebitSum / revenue) * 100
 }
 
@@ -24,6 +30,7 @@ const GetNetProfitMargin = (data) => {
     const revenue = GetRevenue(data)
     const expense = GetExpense(data)
     const subtract = revenue - expense
+    if (revenue ==0 ) return 0
     return (subtract / revenue) * 100
 }
 
@@ -65,6 +72,7 @@ const getDebitLiabilities = (data) => {
 const getWorkingCapitalRatio = (data) => {
     const assets = getAssets(data)
     const liabilities = getLiabilities(data)
+    if (assets ==0 ) return 0
     return (assets / liabilities) * 100
 }
 

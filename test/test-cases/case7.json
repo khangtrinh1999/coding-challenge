@@ -1,0 +1,27 @@
+{
+    "object_category": "general-ledger",
+    "connection_id": "69260737-4c37-4f28-a9dc-270473a6d84a",
+    "user": "b0c9fe7c-915e-45e4-8e9e-49d4f27281a5",
+    "object_creation_date": "2020-10-30T01:58:16.723Z",
+    "data": [
+        {
+            "account_code": "429",
+            "account_currency": "AUD",
+            "account_status": "ACTIVE",
+            "account_type": "overheads",
+            "account_type_bank": "",
+            "account_category": "revenue",
+            "account_identifier": "94882296-5acf-4350-8c5b-82bc9370ab78",
+            "account_name": "General Expenses",
+            "system_account": "",
+            "value_type": "debit",
+            "total_value": 966.87
+        }
+    ],
+    "currency": "AUD",
+    "object_origin_type": "accounting",
+    "object_origin_category": "bookkeeping",
+    "object_type": "day",
+    "object_class": "timeline-balance",
+    "balance_date": "2020-09-30T00:00:00.000Z"
+}
