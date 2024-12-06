@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+/// Read data from json file
 const GetDataFromJSON = (filePath) => {
   try {
     const fileContent = fs.readFileSync(filePath, 'utf-8'); // Reading the file synchronously

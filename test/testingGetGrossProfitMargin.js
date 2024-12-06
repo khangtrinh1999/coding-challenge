@@ -1,8 +1,8 @@
 
 const GetDataFromJSON = require('../utils/getDataFromJSON');
-const { GetProfitGrossMargin, GetRevenue } = require('../utils/calculations');
+const { GetGrossProfitMargin, GetRevenue } = require('../utils/calculations');
 
-// TESTING GetProfitGrossMargin function
+// TESTING GetGrossProfitMargin function
 // ASSUMPTIONS 
 // total_cost is non null and positive number
 
@@ -11,12 +11,12 @@ const { GetProfitGrossMargin, GetRevenue } = require('../utils/calculations');
 const test1 = () => {
     const data = GetDataFromJSON('./test/test-cases/case9.json');
     // CALCULATE REVENUE
-    const grossprofitmargin = GetProfitGrossMargin(data);
+    const grossprofitmargin = GetGrossProfitMargin(data);
     const expectedRevenue = ((2313.0 + 32431.0 + 1233.0) /GetRevenue(data))*100;
     if (grossprofitmargin === (expectedRevenue)) {
-        console.log('- GetProfitGrossMargin Test 9 passed');
+        console.log('- GetGrossProfitMargin Test 9 passed');
     } else {
-        console.log('- GetProfitGrossMargin Test 9 failed');
+        console.log('- GetGrossProfitMargin Test 9 failed');
     }
 }
 
@@ -24,12 +24,12 @@ const test1 = () => {
 const test2 = () => {
     const data = GetDataFromJSON('./test/test-cases/case10.json');
     // CALCULATE REVENUE
-    const grossprofitmargin = GetProfitGrossMargin(data);
+    const grossprofitmargin = GetGrossProfitMargin(data);
     const expectedRevenue = (( 32431.0 ) /GetRevenue(data))*100;
     if (grossprofitmargin === (expectedRevenue)) {
-        console.log('- GetProfitGrossMargin Test 10 passed');
+        console.log('- GetGrossProfitMargin Test 10 passed');
     } else {
-        console.log('- GetProfitGrossMargin Test 10 failed');
+        console.log('- GetGrossProfitMargin Test 10 failed');
     }
 }
 
@@ -37,12 +37,12 @@ const test2 = () => {
 const test3 = () => {
     const data = GetDataFromJSON('./test/test-cases/case11.json');
     // CALCULATE REVENUE
-    const grossprofitmargin = GetProfitGrossMargin(data);
+    const grossprofitmargin = GetGrossProfitMargin(data);
     const expectedRevenue = 0;
     if (grossprofitmargin === (expectedRevenue)) {
-        console.log('- GetProfitGrossMargin Test 11 passed');
+        console.log('- GetGrossProfitMargin Test 11 passed');
     } else {
-        console.log('- GetProfitGrossMargin Test 11 failed');
+        console.log('- GetGrossProfitMargin Test 11 failed');
     }
 }
 
@@ -50,12 +50,12 @@ const test3 = () => {
 const test4 = () => {
     const data = GetDataFromJSON('./test/test-cases/case12.json');
     // CALCULATE REVENUE
-    const grossprofitmargin = GetProfitGrossMargin(data);
+    const grossprofitmargin = GetGrossProfitMargin(data);
     const expectedRevenue = 0;
     if (grossprofitmargin === (expectedRevenue)) {
-        console.log('- GetProfitGrossMargin Test 12 passed');
+        console.log('- GetGrossProfitMargin Test 12 passed');
     } else {
-        console.log('- GetProfitGrossMargin Test 12 failed');
+        console.log('- GetGrossProfitMargin Test 12 failed');
     }
 }
 

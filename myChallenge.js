@@ -1,5 +1,5 @@
 const GetDataFromJSON = require('./utils/getDataFromJSON');
-const { GetRevenue, GetExpense, GetProfitGrossMargin, GetNetProfitMargin, getWorkingCapitalRatio } = require('./utils/calculations');
+const { GetRevenue, GetExpense, GetGrossProfitMargin, GetNetProfitMargin, getWorkingCapitalRatio } = require('./utils/calculations');
 const { currencyFormatter, percentageFormatter } = require('./utils/formatter')
 try {
     const data = GetDataFromJSON('./data.json');
@@ -13,7 +13,7 @@ try {
     console.log(`Expense: $${currencyFormatter(expense)}`);
 
     // CALCULATE GROSS PROFIT MARGIN
-    const grossProfitMargin = GetProfitGrossMargin(data);
+    const grossProfitMargin = GetGrossProfitMargin(data);
     console.log(`Gross Profit Margin: ${percentageFormatter(grossProfitMargin)}%`);
 
     // CALCULATE NET PROFIT MARGIN
