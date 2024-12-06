@@ -1,16 +1,29 @@
 const GetDataFromJSON = require('./Utils/GetDataFromJSON');
-const {GetRevenue, GetExpense, GetProfitGrossMargin,GetNetProfitMargin} = require('./Utils/Calculations');
-const {currencyFormatter,percentageFormatter} = require('./Utils/Formatter')
-try{
+const { GetRevenue, GetExpense, GetProfitGrossMargin, GetNetProfitMargin, getWorkingCapitalRatio } = require('./Utils/Calculations');
+const { currencyFormatter, percentageFormatter } = require('./Utils/Formatter')
+try {
     const data = GetDataFromJSON('./data.json');
+
+    // CALCULATE REVENUE
     const revenue = GetRevenue(data);
     console.log(`Revenue: $${currencyFormatter(revenue)}`);
+
+    // CALCULATE EXPENSE
     const expense = GetExpense(data)
     console.log(`Expense: $${currencyFormatter(expense)}`);
+
+    // CALCULATE GROSS PROFIT MARGIN
     const grossProfitMargin = GetProfitGrossMargin(data);
     console.log(`Gross Profit Margin: ${percentageFormatter(grossProfitMargin)}%`);
-    const netProfitMargin= GetNetProfitMargin(data)
+
+    // CALCULATE NET PROFIT MARGIN
+    const netProfitMargin = GetNetProfitMargin(data)
     console.log(`Net Profit Margin: ${percentageFormatter(netProfitMargin)}%`);
+
+    // CALCULATE WORKING CAPITAL RATIO
+    const workingCapitalRatio = getWorkingCapitalRatio(data)
+    console.log(`Working Capital Ratio: ${percentageFormatter(workingCapitalRatio)}%`);
+
 }
 catch (error) {
     console.error("An error occurred:", error.message);
