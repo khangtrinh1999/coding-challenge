@@ -1,3 +1,4 @@
+const exp = require("constants")
 
 const GetRevenue = (data) => {
     return data.reduce((sum, item) => sum + item.total_value, 0)
@@ -13,9 +14,16 @@ const GetSalesDebitSum = (data) => {
     .reduce((sum, item) => sum + item.total_value, 0)
 }
 
-const GetProfitMargin = (data) =>{
+const GetProfitGrossMargin = (data) =>{
     const salesDebitSum = GetSalesDebitSum(data)
     const revenue = GetRevenue(data)
     return (salesDebitSum/revenue)*100
 }
-module.exports = { GetRevenue, GetExpense, GetProfitMargin};
+
+const GetNetProfitMargin = (data) =>{
+    const revenue = GetRevenue(data)
+    const expense = GetExpense(data)
+    const subtract = revenue - expense
+    return (subtract/revenue)*100
+}
+module.exports = { GetRevenue, GetExpense, GetProfitGrossMargin,GetNetProfitMargin};
