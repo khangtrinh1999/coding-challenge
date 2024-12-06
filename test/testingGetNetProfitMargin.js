@@ -7,42 +7,42 @@ const { GetNetProfitMargin, GetRevenue, GetExpense } = require('../utils/calcula
 // total_cost is non null and positive number
 
 
-// Mix test: Test if the functino only sum data entry with account_category == revenue
+
 const test1 = () => {
     const data = GetDataFromJSON('./test/test-cases/case1.json');
     // CALCULATE REVENUE
     const revenue = GetNetProfitMargin(data);
     const expectedRevenue = ((GetRevenue(data) - GetExpense(data))/ GetRevenue(data) )*100;
     if (revenue === (expectedRevenue)) {
-        console.log('GetNetProfitMargin Test 1 passed');
+        console.log('- GetNetProfitMargin Test 1 passed');
     } else {
-        console.log('GetNetProfitMargin Test 1 failed');
+        console.log('- GetNetProfitMargin Test 1 failed');
     }
 }
 
-// Signel entry test: Test when there is 1 data entry with account_category == revenue
+
 const test2 = () => {
     const data = GetDataFromJSON('./test/test-cases/case2.json');
     // CALCULATE REVENUE
     const revenue = GetNetProfitMargin(data);
     const expectedRevenue = ((GetRevenue(data) - GetExpense(data))/ GetRevenue(data) )*100;
     if (revenue === (expectedRevenue)) {
-        console.log('GetNetProfitMargin Test 2 passed');
+        console.log('- GetNetProfitMargin Test 2 passed');
     } else {
-        console.log('GetNetProfitMargin Test 2 failed');
+        console.log('- GetNetProfitMargin Test 2 failed');
     }
 }
 
-// No entry test: Test when there is no data entry with account_category == revenue
+
 const test3 = () => {
     const data = GetDataFromJSON('./test/test-cases/case3.json');
     // CALCULATE REVENUE
     const revenue = GetNetProfitMargin(data);
     const expectedRevenue = 0;
     if (revenue === (expectedRevenue)) {
-        console.log('GetNetProfitMargin Test 3 passed');
+        console.log('- GetNetProfitMargin Test 3 passed');
     } else {
-        console.log('GetNetProfitMargin Test 3 failed');
+        console.log('- GetNetProfitMargin Test 3 failed');
     }
 }
 
@@ -53,9 +53,9 @@ const test4 = () => {
     const revenue = GetNetProfitMargin(data);
     const expectedRevenue = 0;
     if (revenue === (expectedRevenue)) {
-        console.log('GetNetProfitMargin Test 4 passed');
+        console.log('- GetNetProfitMargin Test 4 passed');
     } else {
-        console.log('GetNetProfitMargin Test 4 failed');
+        console.log('- GetNetProfitMargin Test 4 failed');
     }
 }
 
@@ -66,9 +66,9 @@ const test5 = () => {
     const revenue = GetNetProfitMargin(data);
     const expectedRevenue = ((GetRevenue(data) - GetExpense(data))/ GetRevenue(data) )*100;
     if (revenue === (expectedRevenue)) {
-        console.log('GetNetProfitMargin Test 5 passed');
+        console.log('- GetNetProfitMargin Test 5 passed');
     } else {
-        console.log('GetNetProfitMargin Test 5 failed');
+        console.log('- GetNetProfitMargin Test 5 failed');
     }
 }
 

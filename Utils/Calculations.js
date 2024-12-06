@@ -72,9 +72,9 @@ const getDebitLiabilities = (data) => {
 const getWorkingCapitalRatio = (data) => {
     const assets = getAssets(data)
     const liabilities = getLiabilities(data)
-    if (assets ==0 ) return 0
+    if (liabilities ==0 ) return 0
     return (assets / liabilities) * 100
 }
 
 
-module.exports = { GetRevenue, GetExpense, GetProfitGrossMargin, GetNetProfitMargin, getWorkingCapitalRatio };
+module.exports = { GetRevenue, GetExpense, GetProfitGrossMargin, GetNetProfitMargin, getWorkingCapitalRatio, getLiabilities, getAssets };

@@ -14,9 +14,9 @@ const test1 = () => {
     const revenue = GetRevenue(data);
     const expectedRevenue = 32431.0 + 32431.0 ;
     if (revenue === (expectedRevenue)) {
-        console.log('getRevenue Test 1 passed');
+        console.log('- getRevenue Test 1 passed');
     } else {
-        console.log('getRevenue Test 1 failed');
+        console.log('- getRevenue Test 1 failed');
     }
 }
 
@@ -27,9 +27,9 @@ const test2 = () => {
     const revenue = GetRevenue(data);
     const expectedRevenue = 32431.0;
     if (revenue === (expectedRevenue)) {
-        console.log('getRevenue Test 2 passed');
+        console.log('- getRevenue Test 2 passed');
     } else {
-        console.log('getRevenue Test 2 failed');
+        console.log('- getRevenue Test 2 failed');
     }
 }
 
@@ -40,9 +40,9 @@ const test3 = () => {
     const revenue = GetRevenue(data);
     const expectedRevenue = 0;
     if (revenue === (expectedRevenue)) {
-        console.log('getRevenue Test 3 passed');
+        console.log('- getRevenue Test 3 passed');
     } else {
-        console.log('getRevenue Test 3 failed');
+        console.log('- getRevenue Test 3 failed');
     }
 }
 
@@ -53,9 +53,9 @@ const test4 = () => {
     const revenue = GetRevenue(data);
     const expectedRevenue = 0;
     if (revenue === (expectedRevenue)) {
-        console.log('getRevenue Test 4 passed');
+        console.log('- getRevenue Test 4 passed');
     } else {
-        console.log('getRevenue Test 4 failed');
+        console.log('- getRevenue Test 4 failed');
     }
 }
 

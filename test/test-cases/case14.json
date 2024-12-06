@@ -1,0 +1,80 @@
+{
+    "object_category": "general-ledger",
+    "connection_id": "69260737-4c37-4f28-a9dc-270473a6d84a",
+    "user": "b0c9fe7c-915e-45e4-8e9e-49d4f27281a5",
+    "object_creation_date": "2020-10-30T01:58:16.723Z",
+    "data": [
+       
+        {
+            "account_category": "assets",
+            "account_code": "610",
+            "account_type": "current_accounts_receivable",
+            "account_type_bank": "",
+            "account_currency": "AUD",
+            "account_identifier": "3dd5c80d-e109-4313-8c61-41648e33704f",
+            "account_name": "Accounts Receivable",
+            "account_status": "ACTIVE",
+            "system_account": "DEBTORS",
+            "value_type": "debit",
+            "total_value": 10749.5
+        },
+        {
+            "system_account": "",
+            "account_code": "090",
+            "account_currency": "AUD",
+            "account_identifier": "13918178-849a-4823-9a31-57b7eac713d7",
+            "account_status": "ACTIVE",
+            "account_type": "bank",
+            "account_category": "assets",
+            "account_name": "Business Bank Account",
+            "account_type_bank": "BANK",
+            "value_type": "debit",
+            "total_value": 1065.85
+        },
+        {
+            "system_account": "",
+            "value_type": "debit",
+            "account_category": "assets",
+            "account_code": "091",
+            "account_currency": "AUD",
+            "account_status": "ACTIVE",
+            "account_type_bank": "BANK",
+            "account_identifier": "26028d3a-f981-44d6-a9ed-a522198870f8",
+            "account_name": "Business Savings Account",
+            "account_type": "bank",
+            "total_value": 15081.23
+        },
+        {
+            "account_category": "assets",
+            "account_name": "Office Equipment",
+            "total_value": 750.0,
+            "account_status": "ACTIVE",
+            "account_type": "fixed",
+            "account_type_bank": "",
+            "system_account": "",
+            "value_type": "debit",
+            "account_code": "710",
+            "account_currency": "AUD",
+            "account_identifier": "2d69b4ee-37d4-4f67-b950-32cbdd5765ed"
+        },
+        {
+            "account_currency": "AUD",
+            "account_identifier": "24d010bf-5e4b-42dd-9aa3-a5484dd0686f",
+            "account_name": "Less Accumulated Depreciation on Office Equipment",
+            "account_type": "bank",
+            "account_type_bank": "",
+            "account_category": "assets",
+            "account_status": "ACTIVE",
+            "system_account": "",
+            "value_type": "credit",
+            "total_value": 825.0,
+            "account_code": "711"
+        }
+    ],
+    "currency": "AUD",
+    "object_origin_type": "accounting",
+    "object_origin_category": "bookkeeping",
+    "object_type": "day",
+    "object_class": "timeline-balance",
+    "balance_date": "2020-09-30T00:00:00.000Z"
+}
